@@ -1,6 +1,71 @@
-.başlık{
-    width: 100%;
-    height: 50px;
-    background-color: green;
+/* Genel Sayfa Düzeni */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+/* Buton ve Başlığı Yan Yana Getiren Alan */
+.ustalan {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Buton Tasarımı */
+.buton {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buton:hover {
+    background-color: #1b5e20;
+}
+
+/* Başlık Boşluk Sıfırlama */
+.baslik h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Ana İçerik ve Bölümler */
+.icerik {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sehirresim {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bolum {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Kulüp Bilgileri Kartı */
+.kart {
+    border-left: 5px solid #2e7d32;
+    padding-left: 15px;
+    background-color: #fafafa;
+    padding: 10px 15px;
+}
+
+ul {
+    padding-left: 20px;
 }

@@ -1,37 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-    <title>BENİM HAKKIMDA</title>
-    <link rel="stylesheet" href="./css.css">
+    <meta charset="UTF-8">
+    <title>Benim Hakkımda</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 
-    <h1>Hoşgeldiniz!</h1>
-<h2>Benim hakkımda birşeyler öğrenmek istermisiniz?</h2>
-<img src="./images/5510868131.JPG" width="300" height="350">
-<p>Benim adım Abdülhamid MAABDEH.<br>
-18 yaşındayım,SAKARYA ÜNİVERSİTESİNDE BİLGİSAYAR mühendislği okuyorum.<br>
-Bilgisayarla uğraşmayı seviyorum.
-</p>
-<h3>HOBİLERİM</h3>
-<ul>
-    <li>Resim çizmek</li>
-    <li>Bilgisayar oyunları</li>
-    <li>Masa tenisi</li>
-    <li>Futbol</li>
-</ul>
-<div class="ps-5 mt-5 pe-5 mb-5"></div>
-<h3>Yakın zamanda yaptığım etkinlikler</h3>
-<ul>
-    <li><h4>DÜZCEDE RAFTİNG</h4></li>
-    <h4><li>POYRAZLAR PARKINDA PİKNİK</li></h4>
-</ul>
-<img src="./images/fcb246c5-bb90-417e-af0d-65099c143ce1.jpg" width="300"><br> 
+    <div class="kutu">
+        
+        <header class="ustalan">
+            <h1>Hoş geldiniz!</h1>
+            <h2>Benim hakkımda bir şeyler öğrenmek ister misiniz?</h2>
+        </header>
 
-<a href="./cv.html">Bu benim öz geçmişim<br>-eğitim aldığım okullar ve imza attığım projelere göz atabilirsinz.<br><br></a>
+        <main class="icerik">
+            <img class="profilresim" src="./images/5510868131.JPG" alt="Abdülhamid Maabdeh">
+            
+            <section class="biyografi">
+                <p>Benim adım <strong>Abdülhamid MAABDEH</strong>.</p>
+                <p>18 yaşındayım, <strong>Sakarya Üniversitesi</strong>'nde Bilgisayar Mühendisliği okuyorum.</p>
+            </section>
 
-<a href="./mycity.html">Yaşadığım şehirin kültürüne ve gezilecek yerlerine bak!<br><br></a>
+            <section class="kart hobiler">
+                <h3>Hobilerim</h3>
+                <ul>
+                    <li>Resim çizmek</li>
+                    <li>Bilgisayar oyunları</li>
+                    <li>Masa tenisi</li>
+                    <li>Futbol</li>
+                </ul>
+            </section>
 
-<a href="./comunication.html">Buradan benimle iletitişime geçebilirsiniz.</a>
+            <section class="kart etkinlikler">
+                <h3>Yakın Zamanda Yaptığım Etkinlikler</h3>
+                <ul>
+                    <li>Düzce'de Rafting</li>
+                    <li>Poyrazlar Parkı'nda Piknik</li>
+                </ul>
+                <img class="etkinlikresim" src="./images/fcb246c5-bb90-417e-af0d-65099c143ce1.jpg" alt="Etkinlik Görseli">
+            </section>
+
+            <nav class="baglantilar">
+                <a href="./cv.html" class="link">
+                    <strong>Öz Geçmişim:</strong> Eğitim aldığım okullar ve imza attığım projelere göz atabilirsiniz.
+                </a>
+                <a href="./mycity.html" class="link">
+                    <strong>Yaşadığım Şehir:</strong> Şehrin kültürüne ve gezilecek yerlerine bak!
+                </a>
+                <a href="./comunication.html" class="link">
+                    <strong>İletişim:</strong> Buradan benimle iletişime geçebilirsiniz.
+                </a>
+            </nav>
+        </main>
+
+    </div>
 
 </body>
-
-
+</html>

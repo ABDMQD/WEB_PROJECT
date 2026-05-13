@@ -1,8 +1,114 @@
-h1{
-    background-color: blue;
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 30px 10px;
+    background-color: #f0f4f1; 
+    color: #2c3e50; 
 }
 
 
-img{
-    text-align: center;
+.kutu {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.ustalan h1 {
+    color: #1b5e20;
+    margin-bottom: 5px;
+}
+
+.ustalan h2 {
+    color: #555555;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+
+.profilresim {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid blue; 
+    margin: 15px 0;
+}
+
+
+.biyografi p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.kart {
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+
+.hobiler {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+}
+
+.hobiler h3 {
+    color: #1b5e20;
+    margin-top: 0;
+}
+
+/* Etkinlikler Bölümü Renkleri */
+.etkinlikler {
+    background-color: #efebe9;
+    border-left: 5px solid #4e342e;
+}
+
+.etkinlikler h3 {
+    color: #4e342e;
+    margin-top: 0;
+}
+
+
+.etkinlikresim {
+    max-width: 70%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+.baglantilar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    display: block;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+
+.link:hover {
+    background-color: #e0f2f1;
+    border-color: #004d40;
+    color: #004d40;
 }

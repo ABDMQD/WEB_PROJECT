@@ -18,17 +18,58 @@ body {
 }
 
 
-.ustalan h1 {
-    color: #1b5e20;
-    margin-bottom: 5px;
+/* Üst Başlık Alanı Düzeni */
+.ustalan {
+    display: flex;
+    justify-content: space-between; /* Başlığı sola, butonu sağa yaslar */
+    align-items: center;
+    border-bottom: 2px solid #e8f5e9;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.ustalan h2 {
-    color: #555555;
-    font-size: 18px;
-    font-weight: normal;
-    margin-top: 0;
+.ustalan h1 {
+    color: #1b5e20;
+    margin: 0;
+    font-size: 28px;
 }
+
+/* Giriş Yap Düğmesi Tasarımı */
+.girisbutonu {
+    background-color: #2e7d32; /* Koyu Yeşil */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.girisbutonu:hover {
+    background-color: #1b5e20; 
+}
+
+
+.kutu {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.profilresim {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #2e7d32;
+    display: block;
+    margin: 0 auto 20px;
+}
+
 
 
 .profilresim {
@@ -63,7 +104,7 @@ body {
     margin-top: 0;
 }
 
-/* Etkinlikler Bölümü Renkleri */
+
 .etkinlikler {
     background-color: #efebe9;
     border-left: 5px solid #4e342e;

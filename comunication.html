@@ -1,1 +1,55 @@
-    <button onclick="document.location='./aboutme.html'">Homepage</button>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="iletişim.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div id="app" class="form-kapsayici">
+        <h2>İletişim Formu</h2>
+        
+        <form action="iletişim.php" method="POST" id="iletisimFormu">
+            <div class="grup">
+                <label>Ad Soyad:</label>
+                <input type="text" name="ad_soyad" v-model="ad_soyad">
+            </div>
+
+            <div class="grup">
+                <label>E-posta:</label>
+                <input type="email" name="eposta" v-model="eposta">
+            </div>
+
+            <div class="grup">
+                <label>Konu:</label>
+                <select name="konu" v-model="konu">
+                    <option value="">Seçiniz</option>
+                    <option value="Destek">Destek</option>
+                    <option value="Öneri">Öneri</option>
+                </select>
+            </div>
+
+            <div class="grup">
+                <label>Cinsiyet:</label>
+                <input type="radio" name="cinsiyet" value="Erkek" v-model="cinsiyet"> Erkek
+                <input type="radio" name="cinsiyet" value="Kadın" v-model="cinsiyet"> Kadın
+            </div>
+
+            <div class="grup">
+                <label>Mesaj:</label>
+                <textarea name="mesaj" v-model="mesaj"></textarea>
+            </div>
+
+            <div class="butonlar">
+                <button type="button" class="btn-js" onclick="nativeJsKontrol()">JS Denetle</button>
+                
+                <button type="button" class="btn-vue" @click="vueKontrol">Vue Denetle ve Gönder</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="iletişim.js"></script>
+</body>
+</html>

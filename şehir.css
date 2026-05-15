@@ -1,4 +1,4 @@
-/* Genel Sayfa Düzeni */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Buton ve Başlığı Yan Yana Getiren Alan */
+
 .ustalan {
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Buton Tasarımı */
+
 .buton {
     padding: 10px 20px;
     background-color: #2e7d32;
@@ -33,13 +33,13 @@ body {
     background-color: #1b5e20;
 }
 
-/* Başlık Boşluk Sıfırlama */
+
 .baslik h1 {
     margin: 0;
     font-size: 24px;
 }
 
-/* Ana İçerik ve Bölümler */
+
 .icerik {
     max-width: 800px;
     margin: 0 auto;
@@ -58,7 +58,7 @@ body {
     border-radius: 8px;
 }
 
-/* Kulüp Bilgileri Kartı */
+
 .kart {
     border-left: 5px solid #2e7d32;
     padding-left: 15px;
@@ -69,3 +69,44 @@ body {
 ul {
     padding-left: 20px;
 }
+
+.slider-cerceve {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.slaytresim {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    display: none;
+}
+
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.geri { left: 10px; }
+.ileri { right: 10px; }
+
+
